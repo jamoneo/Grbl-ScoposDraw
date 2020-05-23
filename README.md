@@ -14,14 +14,11 @@ Grbl ScoposDraw
    En config, en vez de  Spindle_as_Servo, existe la variable Y_as_Servo, para indicar que se usará el eje Y como servo y que por lo tanto no existirán 3 ejes.
    
    Si activamos la etiqueta  Y_as_Servo, el zócalo del eje Z pasará a ser usado para el eje Y.
-   
-    Por lo que dispondremos de Y_step y Dir_Step para otros usos.
+       Por lo que dispondremos de Y_step y Dir_Step para otros usos.
     
-   Como para el ScoposDraw, solo se necesitan dos ejes, se usarán los zócalos del X y Z en vez de X e Y. Siendo Z en realidad Y.
+   Como para el ScoposDraw, solo se necesitan dos ejes, se usarán los zócalos del X y Z en vez de X e Y. Siendo Z en realidad Y.       Para que funciones el nuevo servo, habrá que crear una nueva opción para darle posición
    
-    P
-    ara que funciones el nuevo servo, habrá que crear una nueva opción para darle posición.
     
-    Para ello se ha creado un comando GCode nuevo, el “V”. De manera que V100 ponga el servo a 100.
+    Para ello se ha creado un comando GCode nuevo, el “V”. De manera que V100 ponga el servo a 100
     
     El comando GCode “S” seguirá usándose para controlar la velocidad del spindle o la potencia del láser.
